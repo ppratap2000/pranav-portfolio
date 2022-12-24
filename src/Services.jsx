@@ -4,15 +4,15 @@ import { useGlobalContext } from "./context";
 import { NavLink } from "react-router-dom";
 import { Button } from "./styles/Button";
 
-const Projects = () => {
-  const { projects } = useGlobalContext();
-  console.log(projects);
+const Services = () => {
+  const { services } = useGlobalContext();
+  console.log(services);
 
   return (
     <Wrapper className="section">
-      <h2 className="common-heading">My Projects</h2>
+      <h2 className="common-heading">Our Services</h2>
       <div className="container grid grid-three-column">
-        {projects.map((curElem) => {
+        {services.map((curElem) => {
           const { id, name, image, description } = curElem;
           return (
             <div key={id} className="card">
@@ -22,7 +22,7 @@ const Projects = () => {
               <div className="card-data">
                 <h3>{name}</h3>
                 <p>{description}</p>
-                <NavLink to="/project">
+                <NavLink to="/service">
                   <Button className="btn">Read More</Button>
                 </NavLink>
               </div>
@@ -117,4 +117,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Projects;
+export default Services;

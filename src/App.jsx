@@ -1,7 +1,7 @@
 import About from "./About";
 import Contact from "./Contact";
 import Home from "./Home";
-import Projects from "./Projects";
+import Services from "./Services";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -41,7 +41,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/project" element={<Projects />} />
+          <Route path="/service" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Routes>
