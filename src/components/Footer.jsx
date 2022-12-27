@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const callMe = () => {
-  window.location.assign('tel:1234567890');
+  window.location.assign('tel:+917597122985');
 }
 const Footer = () => {
   return (
