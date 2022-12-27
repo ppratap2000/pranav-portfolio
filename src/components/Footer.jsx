@@ -5,10 +5,7 @@ import { NavLink } from "react-router-dom";
 import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const callMe = () => {
-  return <a href="tel:+917597122985">
-    <div className="footer-contact" />
-    +917597122985
-  </a>
+  window.location.assign('tel:1234567890');
 }
 const Footer = () => {
   return (
@@ -72,10 +69,11 @@ const Footer = () => {
           </div>
 
           {/* 4th column  */}
+
           <div className="footer-contact">
-            <button onClick={callMe}>
+            <Button onClick={callMe}>
               Call me!
-            </button>
+            </Button>
           </div>
         </div>
 
