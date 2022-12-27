@@ -72,7 +72,7 @@ const Footer = () => {
 
           <div className="footer-contact">
             <Button onClick={callMe}>
-              Call me!
+              Call me
             </Button>
           </div>
         </div>
