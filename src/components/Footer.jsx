@@ -4,6 +4,12 @@ import { Button } from "../styles/Button";
 import { NavLink } from "react-router-dom";
 import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
+const callMe = () => {
+  return <a href="tel:+917597122985">
+    <div className="footer-contact" />
+    +917597122985
+  </a>
+}
 const Footer = () => {
   return (
     <Wrapper>
@@ -67,8 +73,9 @@ const Footer = () => {
 
           {/* 4th column  */}
           <div className="footer-contact">
-            <h3>Call Us</h3>
-            <h3>+91 12345678978</h3>
+            <button onClick={callMe}>
+              Call me!
+            </button>
           </div>
         </div>
 
